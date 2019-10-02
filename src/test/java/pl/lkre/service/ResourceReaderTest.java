@@ -12,7 +12,8 @@ class ResourceReaderTest {
     void fromFileSuccess() throws ResourceReaderException {
         ResourceReader resourceReader = new ResourceReader();
         String actual = resourceReader.fromFile("test.csv");
-        String expected = "test;test2;test3";
+        String expected = "test;test2;test3;\n" +
+                "test;test2;test3;";
         assertEquals(expected, actual);
     }
 
